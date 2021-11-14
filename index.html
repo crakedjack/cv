@@ -6,88 +6,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Egor CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <table cellspacing="20">
-        <tr>
-            <td><img src="https://sun9-25.userapi.com/impg/zD32MBP5MZLV2rQ5nsfSJHuSoKfPnmG3vgt_dw/58aJJFUsDsg.jpg?size=960x960&quality=96&sign=3bad7c5ac12760b0f56b55849167676e&type=album" width="200" alt="Тут моя фотка "></td>
-            <td>
+    <div class="container">
+        <div class="info">
+            <img class="avatar" src="https://sun9-25.userapi.com/impg/zD32MBP5MZLV2rQ5nsfSJHuSoKfPnmG3vgt_dw/58aJJFUsDsg.jpg?size=960x960&quality=96&sign=3bad7c5ac12760b0f56b55849167676e&type=album" alt="Тут моя фотка ">
+            <div class="info-text">
                 <h1>Егор Гостюхин</h1>
-                <p><em> лйлйлйл<strong>qweqwe</strong>лйлй</em></p>
-                <p>йуйцуйцуйцу</p>
-            </td>
-        </tr>
-    </table>
+                <p>Начинающий <strong>Web designer</strong></p>
+                <p>HTML, CSS, JS</p>
+
+
+                <h4>мои социалки</h4>
+
+                <a href="https://vk.com/bestridea" target="_blank">VK</a> |
+                <a href="https://www.instagram.com/egorgostyukhin/" target="_blank">INST</a>
+            </div>
+        </div>
 
 
 
-    <hr>
-
-    <h2>мои социалки</h2>
-    <ul type="square">
-        <li><a href="https://vk.com/bestridea" target="_blank">VK</a></li>
-        <li><a href="https://www.instagram.com/egorgostyukhin/" target="_blank">INST</a></li>
-    </ul>
-    <h2>хобби</h2>
-    <ol type="I">
-        <li>спорт</li>
-        <li>игры</li>
-        <li>кальян</li>
-    </ol>
-    <hr>
-    <h2>Опыт работы</h2>
-    <table>
-
-        <tr>
-            <th>компания</th>
-            <th>должность</th>
-            <th>годы работы</th>
-        </tr>
 
 
-        <tr>
-            <td>Япона мама</td>
-            <td>Кальянный мастер</td>
-            <td>2018-2019</td>
-        </tr>
-        <tr>
-            <td>Museum</td>
-            <td>Кальянный мастер</td>
-            <td>2019-2021</td>
-        </tr>
 
 
-    </table>
-    <hr>
-
-    <h2>youtube</h2>
-    <a href="youtube.html">посмотреть список</a>
+        <div class="card bg-yellow">
 
 
-    <hr>
+            <h2>хобби</h2>
+            <ol type="I" class="list">
+                <li>спорт</li>
+                <li>игры</li>
+                <li>кальян</li>
+            </ol>
+        </div>
 
-    <h2>Связаться со мной</h2>
 
-    <form>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Начните ввод">
+        <div class="card bg-red">
 
-        <br>
 
-        <label for="email">Ваше Email:</label>
-        <input type="email" id="email" placeholder="Начните ввод">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <tr>
+                    <td>Пашкин Бар</td>
+                    <td>Кальянный мастер</td>
+                    <td>2016-2016</td>
+                </tr>
+                <tr>
+                    <td>Plove Project</td>
+                    <td>Кальянный мастер</td>
+                    <td>2016-2016</td>
+                </tr>
 
-        <br>
+                <tr>
+                    <td>Япона мама</td>
+                    <td>Кальянный мастер</td>
+                    <td>2018-2019</td>
+                </tr>
+                <tr>
+                    <td>Museum</td>
+                    <td>Кальянный мастер</td>
+                    <td>2019-2021</td>
+                </tr>
 
-        <label for="email">Ваше Email:</label>
-        <textarea id="text" rows="2" cols="15"></textarea>
 
-        <br>
+            </table>
+        </div>
 
-        <input type="submit" value="Связаться">
+        <h2>Связаться со мной</h2>
+        <div class="contact">
+            <form action="/">
+                <div class="raw">
+                    <div class="form-group">
 
-    </form>
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Начните ввод">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Начните ввод">
+                    </div>
+                </div>
+                <div class="form-group">
+
+                    <label for="email">Вашк сообщение:</label>
+                    <textarea id="text" rows="2" cols="15"></textarea>
+                </div>
+
+                <input class="btn" type="submit" value="Связаться">
+
+
+                <div class="position">
+                    <div class="box"></div>
+                </div>
+
+
+
+
+            </form>
+        </div>
+
+    </div>
+
 </body>
 
 </html>
